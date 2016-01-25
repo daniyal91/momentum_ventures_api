@@ -10,4 +10,4 @@ Installation Guide
 - Create a database by visiting phpMyAdmin from the localhost and name it 'trip_db'.
 - Import the 'database.sql' file (included in the project) into the newly created database.
 - Now open the project in any text editor and open application/config/database.php file and provide user and password for your database.
-- Now open the browser and visit http://your_localhost_url:port/new_trip/index.php/airports/index to view the list of supported api calls.
+- Now open the browser and visit http://your_localhost_url:port/new_trip to view the list of supported api calls.
