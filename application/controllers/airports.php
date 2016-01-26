@@ -24,7 +24,7 @@ class Airports extends CI_Controller {
 
 	public function flight_list()
 	{
-		$trip_id = $_REQUEST['trip_id'];
+		$trip_id = isset($_REQUEST['trip_id']) ? $_REQUEST['trip_id'] : false;
 
 		if($trip_id){
 			$flight_list = $this->airport_model->get_flights_in_trip($trip_id);
@@ -43,9 +43,9 @@ class Airports extends CI_Controller {
 
 	public function add_flight()
 	{
-		$from_id = $_REQUEST['from_id'];
-		$to_id = $_REQUEST['to_id'];
-		$trip_id = $_REQUEST['trip_id'];
+		$from_id = isset($_REQUEST['from_id']) ? $_REQUEST['from_id'] : false;
+		$to_id = isset($_REQUEST['to_id']) ? $_REQUEST['to_id'] : false;
+		$trip_id = isset($_REQUEST['trip_id']) ? $_REQUEST['trip_id'] : false;
 
 		if($from_id && $to_id && $trip_id){
 			$data = array(
@@ -65,7 +65,7 @@ class Airports extends CI_Controller {
 
 	public function remove_flight()
 	{
-		$flight_id = $_REQUEST['flight_id'];
+		$flight_id = isset($_REQUEST['flight_id']) ? $_REQUEST['flight_id'] : false;
 
 		if($flight_id){
 			$data = array(
@@ -83,9 +83,8 @@ class Airports extends CI_Controller {
 
 	public function rename_trip()
 	{
-		$trip_id = $_REQUEST['trip_id'];
-	
-		$trip_name = $_REQUEST['trip_name'];
+		$trip_id = isset($_REQUEST['trip_id']) ? $_REQUEST['trip_id'] : false;	
+		$trip_name = isset($_REQUEST['trip_name']) ? $_REQUEST['trip_name'] : false;
 
 		if($trip_id && $trip_name){
 
