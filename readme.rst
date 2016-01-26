@@ -21,7 +21,7 @@ Database
 ###################
 - Go to phpMyAdmin, create a database and name it as 'trip_db'.
 - Import the 'database.sql' file (included in the project) into the newly created database.
-- Now open the project in any text editor and open application/config/database.php file and provide user and password for your database in this file.
+- Now open the project in any text editor and open application/config/database.php file and provide Hostname, Database name, user and password for your database in this file.
 
 Browse Instructions
 ###################
