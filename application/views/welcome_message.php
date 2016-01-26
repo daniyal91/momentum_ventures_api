@@ -555,7 +555,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 						</tr>
 						<tr>
 							<td class="param">trip_name</td>
-							<td class="format">Integer</td>
+							<td class="format">String</td>
 							<td class="description">Trip Name<br/></td>
 						</tr>
 					</tbody>
