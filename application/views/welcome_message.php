@@ -290,7 +290,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 				<h3>RESPONSE BODY:</h3>
 			</td>
 			<td>
-				<code><strong>If record found the message will be:</strong>&nbsp;&nbsp;&nbsp;<br/>{"message":"Trip renamed Successfully","trip_id":"1"}<br/><strong>If record not found the message will be:</strong>&nbsp;&nbsp;&nbsp;<br/> {"message":"Invalid data"}</code>
+				<code><strong>If trip ID not assigned the message will be:</strong>&nbsp;&nbsp;&nbsp;<br/>{"message": "Invalid trip id or trip id not specified"}<br/><strong>If record not found the message will be:</strong>&nbsp;&nbsp;&nbsp;<br/>{"message":"Record not found"}</code>
 			</td>
 		</tr>
 		</table>

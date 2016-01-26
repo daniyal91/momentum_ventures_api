@@ -35,7 +35,7 @@ class Airports extends CI_Controller {
 				$this->airport_model->response_json($message);
 			}
 		} else {
-			$message = array('message'=> 'Invalid trip id');
+			$message = array('message'=> 'Invalid trip id or trip id not specified');
 			$this->airport_model->response_json($message);
 		}
 
