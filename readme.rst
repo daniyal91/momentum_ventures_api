@@ -6,6 +6,7 @@ Server
 ###################
 - Download and install WAMP(Windows) or MAMP(Mac) for PHP version 5.6.10.
 		For WAMP: http://www.wampserver.com/en/download-wampserver-64bits/#download-wrapper
+		
 		For MAMP: https://www.mamp.info/en/downloads/
 
 - Start the Apache and MySQL server.
